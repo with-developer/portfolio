@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+/* 레이아웃 */
+#header{ position: absolute; left: 0; top: 0; z-index: 9999; }
+#mainview{ position: relative; width: 100vw; height: 150vh;}
+
+
+/******* header *******/
+#header h1{
+  font-size: 22px; font-weight: bold;
+  line-height: 1.2;
+  padding: 30px; 
+  color: #f9ae65;
+}
+
+/******* mainview *******/
+#mainview>article{
+  position: absolute; left: 0; top: 0;
+  height: 150vh;
+}
+.main_back{ 
+  width: 100%; 
+  background-color: #e0e2ee;
+}
+.main_front{ 
+  width: 50%; 
+  background-color: #3c6d79;
+}
+.main_front h2{
+  margin-top: 200px; margin-left: 50px;
+  font-size: 100px; font-weight: bold;
+  line-height: 1.1; color: #f9ae65;
+}
+.main_front .m-imgbox{
+  position: relative;
+  margin-top: 130px;
+  width: 450px; height: 600px;
+  overflow: hidden;
+  background-color: #f9ae65;
+}
+.main_front .m-imgbox .m-img{
+  width: 450px; height: 600px;
+  position: absolute; left: 0; top: 0;
+  background-size: cover;
+}
+
+/******* about *******/
+#about{
+  height: 150vh;
+  display: flex;
+}
+#about .about-title{
+  width: 25%;
+  height: 100vh;
+  display: flex;
+  margin: 0 !important;
+  background-color: #3c6d79;
+}
+#about .about-title h2{
+  font-size: 80px; font-weight: bold;
+  padding: 40px; color: #f9ae65;
+}
+#about .about-pages{
+  width: 75%;
+}
+#about .about-pages div{
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  background-color: #3c6d79;
+  box-sizing: border-box;
+  border-bottom: 2px solid rgb(255, 255, 255,0.5);
+}
+
+#about .about-pages div>p{
+  width: 80%;
+  font-size: 18px;
+  line-height: 30px;
+}

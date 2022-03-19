@@ -1,0 +1,72 @@
+@font-face { font-family: 'S-CoreDream-2ExtraLight'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-2ExtraLight.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'S-CoreDream-3Light'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'S-CoreDream-8Heavy'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-8Heavy.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+/* layout */
+#contents {}
+#section1 {position: relative; height: 100vh; }
+#section2 {height: 2000px; background: #5260d1;}
+#section3 {}
+#section4 {}
+#section5 {}
+#section6 {}
+
+/* sec1 */
+.sec1 {height: 100vh; position: relative;}
+.sec1-left {position: relative; z-index: 10; width: 50%; height: 100vh; background: #5e62d1;}
+.sec1-right {
+    position: absolute; top: 0; right: 0; 
+    z-index: 5; width: 50%; height: 100vh; 
+    background: url(../img/photo9.jpg) no-repeat;
+    background-size: cover; 
+    background-position: center center;
+}
+
+.sec1-left h1 {
+    font-size: 20px; line-height: 1.2; padding: 20px; color:#5fecc8;
+    
+}
+.sec1-left h1 strong {display: block;}
+.sec1-left h1 strong:nth-child(1) {font-weight: 100;}
+.sec1-left h2 {
+    font-size: 6vw; line-height: 6.5vw;
+    padding: 15vh 5vw 5vw 5vw; color: #5fecc8;
+}
+.sec1-left h2 strong {display: block;}
+
+#section1 .mimg {position: absolute; bottom: 10vh; right: 20vw; z-index: 1000; width: 400px; height: 400px; display: none;}
+
+/* sec2 */
+.about {overflow: hidden;}
+.about .about-left {float: left; width: 25%; height: 1000px; }
+.about .about-left h2 {font-size: 4vw; line-height: 4vw;padding: 15vh 5vw 5vw 5vw; color: #5fecc8; }
+.about .about-left h2 span {font-weight: 100;}
+.about .about-left h2 strong {font-weight: 700;}
+
+.about .about-right {float: left; width: 75%;  height: 1000px; padding-top: 400px;}
+.about .about-right > div {border-top: 1px solid #ccc; min-height: 300px; display: flex; flex-wrap: wrap;}
+.about .about-right > div .ar-stit {padding: 20px; color: #5fecc8; font-size: 22px; font-weight: 300; text-transform: uppercase; }
+.about .about-right > div .ar-circle {width: 250px; height: 250px; border-radius: 50%; background: #000; overflow: hidden; margin: 30px;}
+.about .about-right > div .ar-circle img {width: 100%;}
+.about .about-right > div .ar-desc {font-size: 2vw; line-height: 1.4; width: 60%; padding: 2%; color: #5fecc8; font-family: 'S-CoreDream-2ExtraLight';}
+.about .about-right > div .ar-desc strong {font-family: 'S-CoreDream-3Light'; }
+
+
+
+
+
+
+/* media */
+@media (max-width: 800px) {
+    .sec1-right {background: #5e62d1;} 
+    #section1 .mimg {display: block;}
+}
+
+
+
+
+
+
+
+
+
